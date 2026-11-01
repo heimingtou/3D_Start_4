@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PowerupDecoratorData" format=3 uid="uid://b65f482oocv1k"]
+
+[ext_resource type="Script" uid="uid://dluftjyr4m8q0" path="res://scripts/powerup/generic_powerup_decorator.gd" id="1_8n2pu"]
+[ext_resource type="Script" uid="uid://bslulkxbp70v5" path="res://scripts/powerup/powerup_decorator_data.gd" id="2_ypkl2"]
+
+[resource]
+script = ExtResource("2_ypkl2")
+id = "shield"
+display_name = "khiên bảo "
+duration = -1.0
+hurt_damage_multiplier = 0.0
+metadata/_custom_type_script = "uid://bslulkxbp70v5"

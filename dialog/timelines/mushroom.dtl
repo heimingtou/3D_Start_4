@@ -1,0 +1,38 @@
+if GameManager.is_door_unlocked("gate"):
+	if QuestManager.is_completed("coins"):
+		mushroom: Cao gom đu 5 xu roi! Cảm ơn nhe.
+		do QuestManager.turn_in("coins")
+		mushroom: Đây la chìa khoa cai rương go. Trong rưong co qua cho Cao đó.
+	elif QuestManager.is_active("coins"):
+		mushroom: Gom đu 5 xu quanh lang roi quay lại tìm ta nhé.
+	elif QuestManager.can_start("coins"):
+		mushroom: Cao ơi, lang ta can it xu đe sửa cau. Cao gom giup 5 xu được khoong
+		- Được thôi!
+			do QuestManager.start_quest("coins")
+			mushroom: Cảm ơn Cao! Gom đu 5 xu thì quay lại đây.
+		- Đề sau nhé
+			mushroom: Khi nao ranh thì giup ta nhe.
+	elif QuestManager.is_completed("crabs"):
+		mushroom: Đan cua yen roi! Day la 10 xu, cam on Cao nhieu lam.
+		do QuestManager.turn_in("crabs")
+	elif QuestManager.is_active("crabs"):
+		mushroom: Cua ở đao xa van con đo ... Dep đu 3 con roi quay lại nhé.
+	elif QuestManager.can_start("crabs"):
+		mushroom: Con mot viec nua: dan cua o dao xa hay sang pha lang. Cao dep
+		giúp 3 con nhé?
+		- Đề ta lo!
+			do QuestManager.start_quest("crabs")
+			mushroom: Can than đo, cua đong lắm!
+		- Đề sau nhé
+			mushroom: Khi nao san sang thì quay lai tìm ta nhe.
+	else 
+		mushroom: Cửa sang dao ben kia mo roi do. Cao di can than nhe!
+else:
+	mushroom: Chào Cáo! Ta là Nấm, người giữ cánh cửa trên bục cao.
+	mushroom: Bên kia cửa là đảo của đàn cua dữ. Cáo có muốn sang đó không?
+	- Có, mở cửa giúp ta!
+		foxy: Ta không sợ cua đâu!
+		do GameManager.unlock_door("gate")
+		mushroom: Dũng cảm lắm! Cửa mở rồi đó.
+	- Thôi, để lúc khác
+		mushroom: Khi nào sẵn sàng thì quay lại tìm ta nhé.

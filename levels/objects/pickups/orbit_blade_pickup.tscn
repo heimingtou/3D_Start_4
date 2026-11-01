@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cmyft6xnqueuv"]
+
+[ext_resource type="PackedScene" uid="uid://bk8e5i24j6b02" path="res://levels/objects/pickups/powerup_pickup.tscn" id="1_6185d"]
+[ext_resource type="Resource" uid="uid://d4hcgp4n4gmrk" path="res://data/powerup/orbit_blade.tres" id="2_12gmx"]
+[ext_resource type="Texture2D" uid="uid://d2ddy302xblj" path="res://assets/items/blade.png" id="3_3gn8r"]
+
+[node name="OrbitBladePickup" unique_id=327053599 instance=ExtResource("1_6185d")]
+powerup = ExtResource("2_12gmx")
+
+[node name="Sprite" parent="." index="0" unique_id=2088704426]
+texture = ExtResource("3_3gn8r")

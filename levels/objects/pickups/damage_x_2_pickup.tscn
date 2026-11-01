@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cah77e8tlrbk1"]
+
+[ext_resource type="PackedScene" uid="uid://bk8e5i24j6b02" path="res://levels/objects/pickups/powerup_pickup.tscn" id="1_pakkf"]
+[ext_resource type="Resource" uid="uid://d1gwjv7mxmw5c" path="res://data/powerup/damage_x2.tres" id="2_4i80k"]
+[ext_resource type="Texture2D" uid="uid://dh6oina0eo6x1" path="res://assets/items/ruby.png" id="3_5wsam"]
+
+[node name="damage_x2_pickup" unique_id=327053599 instance=ExtResource("1_pakkf")]
+powerup = ExtResource("2_4i80k")
+
+[node name="Sprite" parent="." index="0" unique_id=2088704426]
+texture = ExtResource("3_5wsam")
+
+[node name="Effect" parent="." index="1" unique_id=315190597]
+pixel_size = 0.0625
+billboard = 1
+alpha_cut = 1
+texture_filter = 0

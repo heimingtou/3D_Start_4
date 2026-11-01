@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://b8refmwq8cbyr"]
+
+[ext_resource type="Script" uid="uid://bmdp8u8avxscm" path="res://levels/objects/chest/chest.gd" id="1_2b5gf"]
+[ext_resource type="Texture2D" uid="uid://b4q4kkjryp034" path="res://assets/items/chest/chest_close_01.png" id="1_aga8g"]
+[ext_resource type="Texture2D" uid="uid://c3foe15vbnnl7" path="res://assets/items/chest/chest_close_02.png" id="2_2b5gf"]
+[ext_resource type="Texture2D" uid="uid://ca0p0b7g147ip" path="res://assets/items/chest/chest_close_03.png" id="3_6qm5o"]
+[ext_resource type="Texture2D" uid="uid://dgc4pck8iypop" path="res://assets/items/chest/chest_gold_open_01.png" id="4_b4npe"]
+[ext_resource type="Texture2D" uid="uid://cb47ewsc1fjov" path="res://assets/items/chest/chest_gold_open_02.png" id="5_uib7l"]
+[ext_resource type="Texture2D" uid="uid://f0kuc2wnxxgm" path="res://assets/items/chest/chest_gold_open_03.png" id="6_g2331"]
+[ext_resource type="Texture2D" uid="uid://c07nf0te6ncch" path="res://assets/items/chest/chest_gold_open_04.png" id="7_u6qbv"]
+[ext_resource type="Texture2D" uid="uid://bh587w7mefdd3" path="res://assets/items/chest/chest_gold_open_05.png" id="8_peuwf"]
+[ext_resource type="Script" uid="uid://b2eobbyacfwr1" path="res://scripts/interactive_area_3d.gd" id="9_2572a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jpyye"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aga8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2b5gf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6qm5o")
+}],
+"loop": 1,
+"name": &"close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_b4npe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uib7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_g2331")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u6qbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_peuwf")
+}],
+"loop": 0,
+"name": &"open",
+"speed": 10.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k4wii"]
+size = Vector3(1.8, 1.4, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rbucc"]
+radius = 1.8
+
+[node name="Chest" type="Node3D" unique_id=117300370]
+script = ExtResource("1_2b5gf")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=984414897]
+offset = Vector2(0, 24)
+pixel_size = 0.0625
+billboard = 1
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_jpyye")
+animation = &"open"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1982117621]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1810058934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+shape = SubResource("BoxShape3D_k4wii")
+
+[node name="InteractiveArea3D" type="Area3D" parent="." unique_id=667603867]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("9_2572a")
+prompt_height = 2.6
+metadata/_custom_type_script = "uid://b2eobbyacfwr1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractiveArea3D" unique_id=737448973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_rbucc")
