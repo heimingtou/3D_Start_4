@@ -4,11 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://b4q4kkjryp034" path="res://assets/items/chest/chest_close_01.png" id="1_aga8g"]
 [ext_resource type="Texture2D" uid="uid://c3foe15vbnnl7" path="res://assets/items/chest/chest_close_02.png" id="2_2b5gf"]
 [ext_resource type="Texture2D" uid="uid://ca0p0b7g147ip" path="res://assets/items/chest/chest_close_03.png" id="3_6qm5o"]
-[ext_resource type="Texture2D" uid="uid://dgc4pck8iypop" path="res://assets/items/chest/chest_gold_open_01.png" id="4_b4npe"]
-[ext_resource type="Texture2D" uid="uid://cb47ewsc1fjov" path="res://assets/items/chest/chest_gold_open_02.png" id="5_uib7l"]
-[ext_resource type="Texture2D" uid="uid://f0kuc2wnxxgm" path="res://assets/items/chest/chest_gold_open_03.png" id="6_g2331"]
-[ext_resource type="Texture2D" uid="uid://c07nf0te6ncch" path="res://assets/items/chest/chest_gold_open_04.png" id="7_u6qbv"]
-[ext_resource type="Texture2D" uid="uid://bh587w7mefdd3" path="res://assets/items/chest/chest_gold_open_05.png" id="8_peuwf"]
+[ext_resource type="Texture2D" uid="uid://bg2o8yx7ly65a" path="res://assets/items/chest/chest_open_03.png" id="5_3srgs"]
+[ext_resource type="Texture2D" uid="uid://dx3f7mlh8ob65" path="res://assets/items/chest/chest_open_04.png" id="6_aga8g"]
+[ext_resource type="Texture2D" uid="uid://1jxmjsqy3n14" path="res://assets/items/chest/chest_open_05.png" id="7_2b5gf"]
 [ext_resource type="Script" uid="uid://b2eobbyacfwr1" path="res://scripts/interactive_area_3d.gd" id="9_2572a"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jpyye"]
@@ -29,19 +27,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_b4npe")
+"texture": ExtResource("5_3srgs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_uib7l")
+"texture": ExtResource("6_aga8g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_g2331")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_u6qbv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_peuwf")
+"texture": ExtResource("7_2b5gf")
 }],
 "loop": 0,
 "name": &"open",

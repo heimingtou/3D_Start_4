@@ -20,7 +20,7 @@ var progress: Dictionary = {}
 
 func _ready() -> void:
 	EventBus. enemy_died. connect(_on_enemy_died)
-	EventBus. item_collected. connect(_on_item_collected)
+	EventBus. item_collected.connect(_on_item_collected)
 
 
 ## "" (not taken), "active", "completed" or "turned_in".

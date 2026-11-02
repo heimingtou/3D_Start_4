@@ -3,7 +3,7 @@ extends PowerupDecorator
 
 ## Blades circling the fox while it runs.
 func on_apply() -> void:
-
+	
 	var magnet_area = fox.get_node_or_null("Direction/MagnetArea") as Area3D
 	if magnet_area:
 		print("apply")

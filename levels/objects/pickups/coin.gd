@@ -1,7 +1,10 @@
 extends Pickup
 var target: Node3D = null
-@export var attract_speed := 15.0
+var _is_collect=false
+@export var attract_speed := 10.0
 func _physics_process(delta: float) -> void:
+	if _is_collect:
+		return
 	# Nếu đang có mục tiêu (con cáo) thì bay thẳng tới đó
 	if target and is_instance_valid(target):
 		var direction = (target.global_position - global_position).normalized()
@@ -13,6 +16,9 @@ func _physics_process(delta: float) -> void:
 			queue_free()
 ## One coin.
 func _collect(_fox: Player) -> void:
+	if _is_collect:
+		return
+	_is_collect=true
 	Inventory.add_coin(1)
 	EventBus.item_collected.emit("coin", 1)
 	

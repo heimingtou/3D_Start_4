@@ -11,6 +11,7 @@ var keys := 0
 
 
 func add_coin(amount: int = 1) -> void:
+	print("collect")
 	coins += amount
 	changed.emit()
 

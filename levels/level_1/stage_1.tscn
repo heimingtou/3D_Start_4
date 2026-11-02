@@ -179,16 +179,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.59076, 1.3845634, 18.899895
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.22226, 1.0074208, 30.208986)
 
 [node name="damage_x2_pickup" parent="." unique_id=327053599 instance=ExtResource("22_lxmcf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.927122, 0.84106946, 24.778234)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.927122, 0.84106946, 14.812113)
 
 [node name="Speed_boots_pickup" parent="." unique_id=1925878320 instance=ExtResource("23_5ubvi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.70744, 0.7025826, 22.83392)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.342621, 0.7025826, 6.7278805)
 
 [node name="OrbitBladePickup" parent="." unique_id=684111062 instance=ExtResource("24_5ubvi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.33034, 1.6999991, 28.717102)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.33034, 2.8959515, 8.975178)
 
 [node name="shield_pickup" parent="." unique_id=1226934753 instance=ExtResource("25_rpm3b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.079056, 0.763376, 30.306042)
 
 [node name="magnet_pickup" parent="." unique_id=1883852601 instance=ExtResource("26_h1rxi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.29879, 0.95891404, 29.94764)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6260424, 0.95891404, 29.94764)
