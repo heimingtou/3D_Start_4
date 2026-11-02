@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://fsub6xkxmjvm" path="res://levels/objects/pickups/speed_boots_pickup.tscn" id="23_5ubvi"]
 [ext_resource type="PackedScene" uid="uid://cmyft6xnqueuv" path="res://levels/objects/pickups/orbit_blade_pickup.tscn" id="24_5ubvi"]
 [ext_resource type="PackedScene" uid="uid://cif18t7utqstp" path="res://levels/objects/pickups/shield_pickup.tscn" id="25_rpm3b"]
+[ext_resource type="PackedScene" uid="uid://bcksde0cfpxyt" path="res://data/powerup/magnet_pickup.tscn" id="26_h1rxi"]
 
 [sub_resource type="Environment" id="Environment_rf8dn"]
 ambient_light_source = 3
@@ -148,19 +149,28 @@ floor_map = NodePath("../World")
 obstacle_maps = [NodePath("../Blocks"), NodePath("../Objects")]
 
 [node name="Coin" parent="." unique_id=791831004 instance=ExtResource("19_h51gi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.13819, 3.0140605, 31.929771)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.13819, 0.89591646, 31.929771)
 
 [node name="Coin2" parent="." unique_id=1615984390 instance=ExtResource("19_h51gi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.13819, 3.0140605, 21.029078)
 
 [node name="Coin3" parent="." unique_id=499786301 instance=ExtResource("19_h51gi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 3.0140605, 21.029078)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 0.66382456, 17.857605)
+
+[node name="Coin7" parent="." unique_id=455349463 instance=ExtResource("19_h51gi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 0.66382456, 23.025337)
+
+[node name="Coin8" parent="." unique_id=1420725591 instance=ExtResource("19_h51gi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 0.66382456, 28.045616)
+
+[node name="Coin9" parent="." unique_id=1605470800 instance=ExtResource("19_h51gi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.755598, 0.66382456, 28.045616)
 
 [node name="Coin4" parent="." unique_id=683104030 instance=ExtResource("19_h51gi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 3.0140605, 30.671759)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.864431, 0.86728, 30.671759)
 
 [node name="Coin5" parent="." unique_id=2060969732 instance=ExtResource("19_h51gi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.427595, 3.0140605, 30.671759)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.427595, 1.1259975, 30.671759)
 
 [node name="Chest" parent="." unique_id=117300370 instance=ExtResource("20_aq4x6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.59076, 1.3845634, 18.899895)
@@ -179,3 +189,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.33034, 1.6999991, 28.71710
 
 [node name="shield_pickup" parent="." unique_id=1226934753 instance=ExtResource("25_rpm3b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.079056, 0.763376, 30.306042)
+
+[node name="magnet_pickup" parent="." unique_id=1883852601 instance=ExtResource("26_h1rxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.29879, 0.95891404, 29.94764)

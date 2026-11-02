@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bcksde0cfpxyt"]
+
+[ext_resource type="PackedScene" uid="uid://bk8e5i24j6b02" path="res://levels/objects/pickups/powerup_pickup.tscn" id="1_jjedn"]
+[ext_resource type="Resource" uid="uid://5eejqir3vj4x" path="res://data/powerup/magnet.tres" id="2_ei1ga"]
+[ext_resource type="Texture2D" uid="uid://ddhjrv24qlpy1" path="res://assets/items/magnet.png" id="3_nmilh"]
+
+[node name="magnet_pickup" unique_id=327053599 instance=ExtResource("1_jjedn")]
+powerup = ExtResource("2_ei1ga")
+
+[node name="Sprite" parent="." index="0" unique_id=2088704426]
+texture = ExtResource("3_nmilh")

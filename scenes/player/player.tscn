@@ -27,6 +27,9 @@ size = Vector3(1.6, 1.6, 1.6)
 [sub_resource type="BoxShape3D" id="BoxShape3D_grab"]
 size = Vector3(1.6, 1.6, 1.6)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_jpyye"]
+radius = 5.0
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
 radius = 0.7998047
 height = 1.6977539
@@ -74,6 +77,14 @@ collision_mask = 8
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Direction/GrabArea3D" index="0" unique_id=399999001]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 1)
 shape = SubResource("BoxShape3D_grab")
+
+[node name="MagnetArea" type="Area3D" parent="Direction" index="3" unique_id=1443183393]
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Direction/MagnetArea" index="0" unique_id=1398694812]
+shape = SubResource("SphereShape3D_jpyye")
 
 [node name="CollisionShape3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.84887695, 0)

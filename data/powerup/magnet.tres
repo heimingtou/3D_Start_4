@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PowerupDecoratorData" format=3 uid="uid://5eejqir3vj4x"]
+
+[ext_resource type="Script" uid="uid://cm3u37j8xqjh6" path="res://scenes/powerups/magnet_decorator.gd" id="1_pbd31"]
+[ext_resource type="Script" uid="uid://bslulkxbp70v5" path="res://scripts/powerup/powerup_decorator_data.gd" id="2_rpdv4"]
+
+[resource]
+script = ExtResource("2_rpdv4")
+id = "magnet"
+display_name = "hút coin"
+decorator_script = ExtResource("1_pbd31")
+metadata/_custom_type_script = "uid://bslulkxbp70v5"
